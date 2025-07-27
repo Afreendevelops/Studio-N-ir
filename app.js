@@ -120,3 +120,12 @@ function init() {
          purple.style.opacity = "0"
      })
  })
+
+// Responsive Navbar Toggle
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  mobileMenu.classList.toggle('active');
+});
